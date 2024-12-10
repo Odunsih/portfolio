@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    font-size: 2rem;
+
+}
+.container {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+form input, form textarea {
+    width: 100%;
+    border: 1;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.btn-outline-info {
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-outline-info:hover {
+        background-color: #0dcaf0;
+        
+}
+
+.copy {
+    text-align: center;
+    background-color: gray;
+}
