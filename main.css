@@ -6,13 +6,26 @@ html {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
 }
 
-nav .container-fluid .row .new {
+/* .new {
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+} */
+
+nav, .container-fluid, .row, .new {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.navbar-toggler {
+    border-style: none;
+}
+
+.navbar-toggler:active {
+    border-style: dashed;
 }
 
 .navbar-nav {
@@ -22,14 +35,26 @@ nav .container-fluid .row .new {
 
 body {
     background-color: black;
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 
 }
 
 /* nav */
 .logo {
-    width: 5%;
+    width: 50px;
     height: 28;
     
+}
+
+.btn-outline-info {
+    border-radius: 100%;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 /* section home */
 #section {
@@ -116,8 +141,10 @@ body {
     margin-left: 0;
 }
 
-.YouthSpark {
+.bi-link {
     text-decoration: none;
+    font-size: 17px;
+    color: #0dcaf0;
 }
 
 /* contact */
@@ -156,15 +183,12 @@ body {
 
 .social-icons a:hover {
     color: #0dcaf0;
-    transform: tran-slateY(-5px);
+    transform: translateY(-5px);
 }
 
-button {
-    transition: transform 0.5s;
-}
 
 button:hover {
-    transform: tran-slateY(-5px);
+    transform: translateY(-5px);
 
 }
 
@@ -183,6 +207,13 @@ form input, form textarea {
     border-radius: 5px;
 }
 
+form input:hover, form textarea:hover {
+    border-style: groove;
+    border-color: #0dcaf0;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
 
 
 .up {
@@ -198,6 +229,33 @@ form input, form textarea {
     bottom: 0;
     margin-top: 50px;
 
+}
+
+@keyframes fade {
+    from {
+        background-color: #032229;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(10px);
+    }
+
+    /* 25% {
+        transform: translate3D(20px);
+    } */
+
+    50% {
+        transform: translateZ(10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 
