@@ -136,7 +136,8 @@ body {
 
 .display-4 {
     color: white;
-    font-size: 3rem;
+    font-size: 30px;
+    font-weight: 600;
     text-align: left;
     margin-left: 0;
 }
@@ -190,6 +191,10 @@ body {
 button:hover {
     transform: translateY(-5px);
 
+}
+
+#contact {
+    margin: 20px;
 }
 
 .contact-right form {
