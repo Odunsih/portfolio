@@ -36,6 +36,11 @@
       </div>
     </div>
     </nav>
+    
+    <!-- popup -->
+    <div class="popup">
+      <h1>Thanks for downloading my cv</h1>
+    </div>
     <!-- section home -->
     <section>
     <div id="section">
@@ -45,11 +50,11 @@
               <div class="container"><br><br>
                 <p data-aos="fade-right" data-aos-duration="2000">Software Developer</p>
                 <h1 data-aos="fade-right" data-aos-duration="2000">Hi, I'm <span>Henry</span> Odunsi</h1>
-                <a href="Henry Adetunji Odunsi.pdf" download type="button" data-aos="fade-left" class="btn btn-outline-info">Download CV</a>
+                <a href="Henry Adetunji Odunsi.pdf" download type="button" data-aos="fade-left" class="btn btn-outline-info" onclick="compliment()">Download CV</a>
                 
               </div><br>
               <div class="img-box">
-                <img src="Henry.png" alt="Henry's pic" data-aos="fade-left" data-aos-duration="2000" class="border">
+                <img class="me" src="Henry.png" alt="Henry's pic" data-aos="fade-left" data-aos-duration="2000" class="border">
             </div>
             </div>
           </div>
@@ -232,7 +237,7 @@
                  method="POST">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
             <button type="submit" id="btn" class="btn btn-outline-info">Submit</button> 
             
           </form>
@@ -244,6 +249,7 @@
         </div>
       </div>
     </div>
+
     <footer class="copy">
       &copy; 2024 HENRY ODUNSI
     </footer>

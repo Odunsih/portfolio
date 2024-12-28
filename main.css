@@ -73,12 +73,22 @@ body {
     cursor: pointer;
 }
 
+.me {
+    transition:  border-radius 9s;
+
+}
+
+.me:hover {
+    border-radius: 1000px;
+}
+
 .img-box {
-    transition: transform 3s;
+    /* transition: transform 9s; */
 }
 
 .img-box:hover {
     transform: rotate(360deg);
+
 }
 
 .container h1 span {
@@ -231,13 +241,17 @@ form input, form textarea {
     color: black;
     font-size: 18px;
     border-radius: 5px;
+    transition: border-color 2s;
+    transition: border-radius 2s;
+    transition: font-size 1s;
 }
 
 form input:hover, form textarea:hover {
     border-style: groove;
     border-color: #0dcaf0;
     border-width: 3px;
-    border-radius: 10px;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
 
@@ -255,6 +269,20 @@ form input:hover, form textarea:hover {
     bottom: 0;
     margin-top: 50px;
 
+}
+
+.popup {
+    display: none;
+}
+
+.pop {
+    display: block;
+    background-color: #032229;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+    padding: auto;
+    padding-left: 10px;
 }
 
 @keyframes fade {
