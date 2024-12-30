@@ -9,3 +9,6 @@ const compliment = () => {
         popup.classList.remove('popup')
     }, 2000);
 }
+
+
+
