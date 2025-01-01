@@ -360,10 +360,20 @@ form input:focus, form textarea:focus {
     display: block;
     background-color: #032229;
     color: aliceblue;
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: auto;
     padding-left: 10px;
+    animation: slide 6s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes fade {

@@ -9,7 +9,7 @@ const compliment = () => {
         setTimeout(() => {
             popup.classList.remove('pop')
             popup.classList.add('popup')
-        }, 2000);
+        }, 6000);
     }, 2000);
 
 }
