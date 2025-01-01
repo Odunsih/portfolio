@@ -336,8 +336,7 @@ form input:focus, form textarea:focus {
 .up {
     text-align: right;
     font-size: 20px;
-    /* position: fixed; */
-    position: none;
+    position: fixed;
     padding: 10px;
     left: 0;
     margin: 0 auto;
@@ -423,6 +422,6 @@ form input:focus, form textarea:focus {
 
 @media (max-width: 400px) {
     .img-box img {
-        width: 100px;
+        width: 250px;
     }
 }
