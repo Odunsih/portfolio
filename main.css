@@ -1,12 +1,5 @@
-.container-fluid {
-    
-}
 html {
     scroll-behavior: smooth;
-}
-
-nav {
-    /* position: fixed; */
 }
 
 /* .new {
@@ -21,16 +14,54 @@ nav, .container-fluid, .row, .new {
 }
 
 .navbar-toggler {
-    border-style: none;
+    border: none;
+    height: 20px;
 }
 
-.navbar-toggler:active {
-    border-style: dashed;
+.navbar-toggler:focus {
+    border: none;
 }
 
 .navbar-nav {
     text-align: center;
 }
+
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    height: 20px;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+
 
 
 body {
@@ -55,7 +86,9 @@ body {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    transition: background-color 1s, color 1s;
 }
+
 /* section home */
 #section {
     color: white;
@@ -172,6 +205,43 @@ body {
     color: #0dcaf0;
 }
 
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008bba6c;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .carousel-item:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
 /* contact */
 
 .contact-left {
@@ -257,9 +327,14 @@ form input:hover, form textarea:hover {
 
 .up {
     text-align: right;
-    font-size: 2rem;
-    position: fixed;
-    /* bottom: 0; */
+    font-size: 20px;
+    /* position: fixed; */
+    position: none;
+    padding: 10px;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
 }
 
 .copy {
