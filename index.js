@@ -13,7 +13,9 @@ const compliment = () => {
     }, 2000);
 
 }
-
-
+ 
+let footer = document.querySelector('.year');
+const date = new Date().getFullYear();
+footer.innerText = date;
 
 
