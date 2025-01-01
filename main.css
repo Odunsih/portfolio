@@ -323,6 +323,14 @@ form input:hover, form textarea:hover {
     font-size: 20px;
 }
 
+form input:focus, form textarea:focus {
+    border-style: groove;
+    border-color: #0dcaf0;
+    border-width: 3px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
 
 
 .up {
