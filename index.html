@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Henry Odunsi</title>
   </head>
-  <body>
-    <nav id="nav" class="navbar navbar-expand-lg bg-dark border-body" data-bs-theme="dark">
+  <body onscroll="topo()">
+    <nav id="nav" class="navbar navbar-expand-lg bg-dark border-body fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
       <div class="row">
         <div class="new">
@@ -101,8 +101,8 @@
             </div>
         </div>
     </div>
-    <div class="up">
-      <a href="#nav"><i class="bi bi-arrow-up-square-fill"></i></a>
+    <div id="up" class="upArrow">
+      <a href="#section"><i class="bi bi-arrow-up-square-fill"></i></a>
     </div>
     <!-- modals  -->
     <div class="modal fade skill-modal-lg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -145,7 +145,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="modal fade edc-modal-lg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-
+   
     <!-- portfolio -->
     <div id="portfolio" data-aos="zoom-in" data-aos-duration="2000">
     <div class="row">

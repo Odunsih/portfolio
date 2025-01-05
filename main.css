@@ -15,7 +15,7 @@ nav, .container-fluid, .row, .new {
 }
 
 nav {
-    border-bottom: .5px solid #0dcaf0
+    border-bottom: .5px solid #0dcaf0;
 }
 
 
@@ -102,7 +102,8 @@ body {
     text-align: center;
     padding: 30px;
     margin: auto;
-   width: 85%;
+    margin-top: 50px;
+    width: 85%;
 
 }
 
@@ -338,7 +339,9 @@ form input:focus, form textarea:focus {
     font-size: 20px;
 }
 
-
+.upArrow {
+    display: none;
+}
 
 .up {
     text-align: right;
@@ -365,6 +368,7 @@ form input:focus, form textarea:focus {
 
 .pop {
     display: block;
+    margin-top: 20px;
     background-color: #032229;
     color: aliceblue;
     position: absolute;

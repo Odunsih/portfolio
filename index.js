@@ -12,6 +12,12 @@ const compliment = () => {
   }, 2000);
 };
 
+const topo = () => {
+  let top = document.getElementById("up");
+  top.classList.remove("upArrow");
+  top.classList.add("up");
+};
+
 let footer = document.querySelector(".year");
 const date = new Date().getFullYear();
 footer.innerText = date;
