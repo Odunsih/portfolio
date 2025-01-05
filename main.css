@@ -11,7 +11,13 @@ nav, .container-fluid, .row, .new {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
+
+nav {
+    border-bottom: .5px solid #0dcaf0
+}
+
 
 .navbar-toggler {
     border: none;
