@@ -371,7 +371,7 @@ form input:focus, form textarea:focus {
 }
 
 .pop {
-    display: block;
+    display: inline;
     margin-top: 20px;
     background-color: #032229;
     color: aliceblue;
@@ -421,6 +421,11 @@ form input:focus, form textarea:focus {
     }
 }
 
+@media (min-width: 1000px) {
+    .d-block {
+        height: 500px;
+    }
+}
 
 @media  (max-width: 600px) {
     .img-box img {
