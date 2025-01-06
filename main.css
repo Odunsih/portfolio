@@ -380,17 +380,25 @@ form input:focus, form textarea:focus {
 
 .popup {
     display: none;
+    overflow: hidden;
+}
+
+.popText {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .pop {
-    display: inline;
+    /* display: inline; */
+    overflow: hidden;
     margin-top: 20px;
     background-color: #032229;
     color: aliceblue;
     position: absolute;
     width: 100%;
-    padding: auto;
-    padding-left: 10px;
+    /* padding: auto; */
+    /* padding-left: 10px; */
     animation: slide 6s linear infinite;
 }
 
